@@ -2,12 +2,13 @@
 Resource    ../global_keywords/global_keywords.robot
 Library     FakerLibrary
 
+
 *** Variables ***
 ${LOGIN_URL}               ${BASE_URL}/login
 ${EMAIL_INPUT}             id=email
 ${PASSWORD_INPUT}          id=senha
 ${LOGIN_BUTTON}            xpath=//button[@class='btn btn-primary']
-${ERROR_MESSAGE_TOAST}     xpath=//div[@class='alert alert-danger']
+
 
 *** Keywords ***
 Access the login page 
@@ -29,3 +30,10 @@ Insert a invalid password
 
 Click the enter button
     Click Button    ${LOGIN_BUTTON}
+
+Login to the site
+    [Arguments]    ${EMAIL}    ${PASSWORD}
+    Access the login page
+    Insert the user's email "${EMAIL}"
+    Insert the user's password "${PASSWORD}"
+    Click the enter button
