@@ -10,7 +10,7 @@ Suite Teardown     Close Browser
 
 *** Test Cases ***
 Successfully account delete
-    [Documentation]   Priority: Low
+    [Tags]   priority_high
     Click the delete button from the name account    Conta Teste EDITADA
     Verify if succesfully message is "Conta removida com sucesso!"
 
