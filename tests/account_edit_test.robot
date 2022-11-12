@@ -11,7 +11,7 @@ Suite Teardown     Close Browser
 
 *** Test Cases ***
 Successfully edit account  
-    [Documentation]   Priority: Low
+    [Tags]   priority_high
     Click the edit button from the name account    Conta Teste 1
     Edit the account's name for "Conta Teste EDITADA"
     Click the save edit button
