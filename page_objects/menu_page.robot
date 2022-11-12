@@ -3,9 +3,9 @@ Library    SeleniumLibrary
 
 
 *** Variables ***
-${ACCOUNT_MENU}            xpath=//a[contains(.,'Contas')]
-${OPTION_ADD_ACCOUNT}      xpath=//a[contains(.,'Adicionar')]
-${OPTION_ACCOUNT_LIST}     xpath=//a[contains(.,'Listar')]
+${ACCOUNT_MENU}            link=Contas
+${OPTION_ADD_ACCOUNT}      link=Adicionar
+${OPTION_ACCOUNT_LIST}     link=Listar
 
 
 *** Keywords ***

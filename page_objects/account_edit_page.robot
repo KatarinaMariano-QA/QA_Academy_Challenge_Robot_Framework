@@ -3,7 +3,7 @@ Resource    ../global_keywords/global_keywords.robot
 
 
 *** Variables ***
-${ACCOUNT_NAME_INPUT}       id=nome
+${ACCOUNT_NAME_INPUT}            id=nome
 ${ACCOUNT_SAVE_EDIT_BUTTON}      xpath=//button[@class='btn btn-primary']     
 
 
